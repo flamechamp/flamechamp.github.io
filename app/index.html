@@ -10,12 +10,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <html lang="en">
-<script>'https:'!==window.location.protocol&&(window.location.protocol='https')</script>
+<!-- script>'https:'!==window.location.protocol&&(window.location.protocol='https')</script -->
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Polymer Starter Kit">
+  <meta name="generator" content="Peronal Website">
   <title>David Kurniawan</title>
 
   <!-- Place favicon.ico in the `app/` directory -->
@@ -79,9 +79,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <span>Home</span>
           </a>
 
-          <a data-route="users" href="{{baseUrl}}users">
-            <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
+          <a data-route="users" href="{{baseUrl}}education">
+            <iron-icon icon="social:school"></iron-icon>
+            <span>Education</span>
+          </a>
+
+          <a data-route="users" href="{{baseUrl}}work">
+            <iron-icon icon="work"></iron-icon>
+            <span>Work Experience</span>
           </a>
 
           <a data-route="contact" href="{{baseUrl}}contact">
@@ -97,20 +102,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <paper-toolbar id="mainToolbar" class="tall">
           <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
 
-          <span class="space"></span>
-
-          <!-- Toolbar icons -->
-          <paper-icon-button icon="refresh"></paper-icon-button>
-          <paper-icon-button icon="search"></paper-icon-button>
-
           <!-- Application name -->
           <div class="middle middle-container">
-            <div class="app-name">Polymer Starter Kit</div>
+            <div class="app-name">David Kurniawan</div>
           </div>
 
           <!-- Application sub title -->
           <div class="bottom bottom-container">
-            <div class="bottom-title">The future of the web today</div>
+            <div class="bottom-title">Theistic Technology Enthusiast</div>
           </div>
         </paper-toolbar>
 
@@ -118,61 +117,105 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
             <section data-route="home">
+              
               <paper-material elevation="1">
-                <my-greeting></my-greeting>
-
-                <p class="subhead">You now have:</p>
-                <my-list></my-list>
-
-                <p>Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p>
+                <img src="http://gdurl.com/m5Zz" width="40%" id="photo"/>
+                <p>Welcome to my personal site.</p>
               </paper-material>
 
               <paper-material elevation="1">
-                <p>This is another card.</p>
-              </paper-material>
+              <h2>About Me</h2>
+                <p>I am a theistic technology enthusiast who is currently a student at Carnegie Mellon University's <a href="http://heinz.cmu.edu/index.aspx">Heinz College</a> pursuing Master of Information Systems Management degree and will graduate May 2016.</p>
 
-              <paper-material elevation="1">
-                <h1 id="license">License</h1>
-                <p>Everything in this repo is BSD style license unless otherwise specified.</p>
-                <p>Copyright (c) 2015 The Polymer Authors. All rights reserved.</p>
-                <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-                <ul>
-                <li>Redistributions of source code must retain the above copyright
-                notice, this list of conditions and the following disclaimer.</li>
-                <li>Redistributions in binary form must reproduce the above
-                copyright notice, this list of conditions and the following disclaimer
-                in the documentation and/or other materials provided with the
-                distribution.</li>
-                <li>Neither the name of Google Inc. nor the names of its
-                contributors may be used to endorse or promote products derived from
-                this software without specific prior written permission.</li>
-                </ul>
-                <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+                <p>I am interested in a wide variety of topics, but specifically I am passionate about technology innovation and data analytics especially in the field of social media analytics.</p>
               </paper-material>
             </section>
 
-            <section data-route="users">
+            <section data-route="education">
               <paper-material elevation="1">
-                <h2 class="page-title">Users</h2>
-                <p>This is the users section</p>
-                <a href$="{{baseUrl}}users/Addy">Addy</a><br>
-                <a href$="{{baseUrl}}users/Rob">Rob</a><br>
-                <a href$="{{baseUrl}}users/Chuck">Chuck</a><br>
-                <a href$="{{baseUrl}}users/Sam">Sam</a>
+                <h1 class="page-title">Education</h1>
+                <paper-material elevation="2">
+                  <h2>Carnegie Mellon University</h2>
+                  <h4>Master of Information Systems Management</h4>
+                  <p>Pittsburgh, PA</p>
+                  <p>May 2015 - May 2016</p>
+                  <paper-material elevation="3">
+                    <h3>Projects</h3>
+                    <h4>Predicting Affective States of Educational Software</h4>
+                    <p>95-791 (Spring 2016)</p>
+
+                    <h4>Analyzing Social Media Data to Improve Blog Readership of a Digital Education Firm</h4>
+                    <p>94-823 (Fall 2015)</p>
+                    <ul>
+                      <li>Analyzed social data from social listening tool such as Brandwatch, Kairos, Comscore and Google Analytics.</li>
+                      <li>Developed strategies to increase blog readership and leverage the social media platform more.</li>
+                      <li>Presented complex data using Tableau for better visualization.</li>
+                    </ul>
+
+                    <h4>Classifying Cifar Images using Neural Network, Support Vector Machine and Naïve Bayes</h4>
+                    <p>10-601 (Fall 2015)</p>
+                    <ul>
+                      <li>Extracted image features using VLFeat HOG algorithm.</li>
+                      <li>Coded three different classifiers to classify images: Neural Network, Support Vector Machine and Naïve Bayes.</li>
+                      <li>Tuned parameters in each classifier to achieve best result and achieved 56% accuracy using Neural Network using 5000 data training.</li>
+                    </ul>
+
+                    <h4>Genetic Algorithm Programming for Symbolic Regression</h4>
+                    <p>95-712 (Summer 2015)</p>
+                    <ul>
+                      <li>Create Tree Set data structure to store operator, variable and constant which forms an equation.</li>
+                      <li>Create a certain number of random trees in a generation.</li>
+                      <li>Evolve it based on the fitness for a chosen data set regression line to find the best equation that fits into the data set.</li>
+                    </ul>
+
+                    <h4>End-to-end Database Implementation using mySQL</h4>
+                    <p>95-703 (Summer 2015)</p>
+
+                  </paper-material>
+                </paper-material>
+                <paper-material elevation="2">
+                  <h2>Swiss German University</h2>
+                  <h4>Bachelor of Engineering, Mechatronics Engineering</h4>
+                  <p>Tangerang, Indonesia</p>
+                  <p>Sep 2007 - May 2011</p>
+                  <paper-material elevation="3">
+                    <h3>Projects</h3>
+                    <h4>Design and Development of Kinematic System Model for Bipedal Robot</h4>
+                    <p>Spring 2011</p>
+                    <ul>
+                      <li>Designed mechanical system of the biped robot in Solidworks</li>
+                      <li>Simulated the mechanical design in Solidworks</li>
+                      <li>Developed kinematic system model for the biped design</li>
+                      <li>Built the biped robot based on the design</li>
+                      <li>Programmed the biped robot and compare the result with the simulation</li>
+                    </ul>
+                  </paper-material>
+                </paper-material>
               </paper-material>
             </section>
 
-            <section data-route="user-info">
+            <section data-route="work">
               <paper-material elevation="1">
-                <h2 class="page-title">User: {{params.name}}</h2>
-                <div>This is {{params.name}}'s section</div>
+                <h1>Work Experience</h1>
+                <paper-material elevation="2">
+                  <h2>Accenture</h2>
+                  <h4>Software Engineering Analyst</h4>
+                  <p>Jakarta, Indonesia</p>
+                  <p>Jan 2012 - Apr 2015</p>
+                  <paper-material elevation="3">
+                    <h3>Projects</h3>
+                    <h4>SAP HR Improvement at International Oil and Gas Company</h4>
+                    <h4>SAP Implementation at Subsidiary National Utility Company</h4>
+                    <h4>SAP Rollout at Largest Mining Company</h4>
+                  </paper-material>
+                </paper-material>
               </paper-material>
             </section>
 
             <section data-route="contact">
               <paper-material elevation="1">
                 <h2 class="page-title">Contact</h2>
-                <p>This is the contact section</p>
+                <p>Email: dkurniaw@andrew.cmu.edu</p>
               </paper-material>
             </section>
           </iron-pages>
@@ -180,9 +223,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </paper-scroll-header-panel>
     </paper-drawer-panel>
 
-    <paper-toast id="toast">
+    <!--paper-toast id="toast">
       <span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span>
-    </paper-toast>
+    </paper-toast-->
 
   </template>
 

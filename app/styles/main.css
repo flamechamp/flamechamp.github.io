@@ -12,3 +12,10 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
 }
+
+#photo{
+	text-align: center;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
