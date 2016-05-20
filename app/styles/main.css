@@ -13,7 +13,12 @@ body {
   color: #333;
 }
 
-#photo{
+#idea {
+	width:100%;
+	height: auto;
+}
+
+#photo {
 	text-align: center;
 	display: block;
     margin-left: auto;
